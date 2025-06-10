@@ -12,7 +12,7 @@ function App() {
     <div className="flex h-screen bg-gray-100">
       <Sidebar />
 
-      <div className="flex flex-1 flex-col overflow-hidden">
+      <div className="flex flex-1 flex-col overflow-y-auto">
         <Topbar />
 
         <div className=" w-full flex flex-1 overflow-hidden bg-white">
