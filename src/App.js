@@ -9,10 +9,10 @@ import LeadsDetailsList from "./components/LeadsDetailsList";
 
 function App() {
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex bg-gray-100 overflow-scroll">
       <Sidebar />
 
-      <div className="flex flex-1 flex-col overflow-y-auto">
+      <div className="flex flex-1 flex-col overflow-scroll">
         <Topbar />
 
         <div className=" w-full flex flex-1 overflow-hidden bg-white">
