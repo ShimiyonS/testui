@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
+import OverviewCards from "./components/OverviewCards";
+import LeadTrendsChart from "./components/LeadTrendsChart";
+import BookingsChart from "./components/BookingsChart";
+import LeadSourceProgress from "./components/LeadSourceProgress";
+import LeadConversionRate from "./components/LeadConversionRate";
+import LeadsDetailsList from "./components/LeadsDetailsList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen bg-gray-100">
+      <Sidebar />
+
+      <div className="flex flex-1 flex-col overflow-hidden">
+        <Topbar />
+
+        <div className=" w-full flex flex-1 overflow-hidden bg-white">
+          <main className="flex-1 p-4 space-y-6 overflow-y-hidden">
+            <OverviewCards />
+            <div className="flex gap-6">
+              <div className="flex-[1.3]">
+                <LeadTrendsChart />
+              </div>
+              <div className="flex-[0.7]">
+                <LeadSourceProgress />
+              </div>
+            </div>
+            <div className="flex gap-6">
+              <div className="flex-[1.3]">
+                <BookingsChart />
+              </div>
+              <div className="flex-[0.7]">
+                <LeadConversionRate />
+              </div>
+            </div>
+          </main>
+
+          <div className="w-96 p-4 border-l overflow-y-auto ">
+            <LeadsDetailsList />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
