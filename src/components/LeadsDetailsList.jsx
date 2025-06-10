@@ -31,6 +31,13 @@ function LeadsDetailsList() {
       project: "Bedford Getaways",
       date: "12 January 2023",
       avatar: "https://i.pravatar.cc/40?img=4",
+    },   {
+      name: "Kierra Aminoff",
+      status: "Cancelled",
+      source: "Instagram",
+      project: "Bedford Getaways",
+      date: "12 January 2023",
+      avatar: "https://i.pravatar.cc/40?img=2",
     },
     {
       name: "Chance Herwitz",
@@ -65,7 +72,7 @@ function LeadsDetailsList() {
   };
 
   return (
-    <div className=" bg-gray-100  rounded-lg shadow h-full overflow-y-auto">
+    <div className=" bg-gray-100 h-screen rounded-lg shadow overflow-y-scroll">
       <div className="flex justify-between items-center p-4">
         <h2 className="text-lg font-semibold">Leads Details</h2>
         <button className="text-sm text-gray-500 hover:underline">

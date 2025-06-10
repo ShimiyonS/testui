@@ -17,7 +17,7 @@ import {
 
 function Sidebar() {
   return (
-    <div className="w-60 bg-purple-700 text-white flex flex-col p-4">
+    <div className="w-60 h-screen bg-purple-700 text-white flex flex-col p-4 overflow-y-auto">
       <h1 className="text-2xl font-bold mb-8">AdUnity</h1>
       <nav className="space-y-4">
         <button className="flex items-center space-x-2 hover:bg-purple-600 p-2 rounded">
